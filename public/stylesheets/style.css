@@ -1,0 +1,105 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.obj1 > .list-group-item {
+  border-top: 1px solid #7f7f7f !important;
+  border-bottom: 1px solid #7f7f7f !important;
+}
+
+.obj1 > .list-group-item:first-child {
+  border-top: none !important;
+}
+
+#obj3-data > ul > li {
+  border: 1px solid #7f7f7f !important;
+}
+
+#obj2-dropdown {
+  border: 1px solid #7f7f7f !important;
+}
+
+.obj1 > li > a {
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.column {
+  background: #bfbfbf;
+  height: 600px !important;
+  border: 1px solid #7f7f7f !important;
+}
+
+.column:nth-child(2) {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.column:first-child {
+  padding: 0 !important;
+}
+
+.drop-down, #obj3-data {
+  padding-top: 25px !important;
+}
+
+.pager > li > button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.obj1 > li.option {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.obj1 > li {
+  text-align: center;
+  height: 70px;
+}
+
+.obj1 > li:nth-child(odd) {
+  background: #bfbfbf;
+  color: #000000;
+}
+
+.obj1 > li:nth-child(even) {
+  background: #afabab;
+  color: #000000;
+}
+
+.obj3-data > li {
+  background: #e7e6e6;
+  color: #000000;
+}
+.obj3-data > li > .badge {
+  background: #000000;
+  color: #ffffff;
+}
+
+.item {
+  display: flex;
+}
+
+.item-text {
+  width: 100%;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  display: none;
+}

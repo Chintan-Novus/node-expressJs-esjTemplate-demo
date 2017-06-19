@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/novus.js"></script>
+
+  </head>
+  <body>
+    <div class=container>
+      <div class="row">
+
+        <div class="column col-md-3" id="obj1">
+          <ul class="list-group obj1">
+            <li class="list-group-item"></li>
+            <li class="list-group-item option">
+              <a id="option-btn" onclick="clickOption()">Option</a>
+            </li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item">
+              Quantity
+              <input type="number" class="form-control" id="quantity" placeholder="Type here" onkeyup="changeQuantity(this.value)" onchange="changeQuantity(this.value)">
+              <span class="error">Please enter quantity</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column col-md-1" id="obj2" style="display: none">
+          <div class="form-group drop-down">
+            <select class="form-control" id="obj2-dropdown">
+              <option>A</option>
+              <option>B</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="column col-md-8 obj3">
+          <div id="obj3" style="display: none">
+            <div id="obj3-data"></div>
+            <nav>
+              <ul class="pager">
+                <li>
+                  <button aria-label="Previous" id="previous"  onclick="changePage(false)">
+                    <span aria-hidden="true"> < </span>
+                  </button>
+                </li>
+                <li>
+                  <button href="#" aria-label="Next" id="next" onclick="changePage(true)">
+                    <span aria-hidden="true"> > </span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
